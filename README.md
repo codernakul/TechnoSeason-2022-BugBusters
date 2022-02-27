@@ -3,10 +3,6 @@
 
 ### Team BugBusters
 
----
-
-Team:
-
 >Nakul Singh
 
 >Bhavik Ghete
