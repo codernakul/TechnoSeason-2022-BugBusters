@@ -1,7 +1,14 @@
-#TechnoSeason 2022 Project
-###Team BugBusters
+
+# TechnoSeason 2022 Project
+
+### Team BugBusters
+
 ---
+
 Team:
-Nakul Singh
-Bhavik Ghete
-Manav Pandya
+
+>Nakul Singh
+
+>Bhavik Ghete
+
+>Manav Pandya
