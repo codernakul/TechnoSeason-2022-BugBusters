@@ -9,8 +9,8 @@ stone = rnd.randint(1, 3)
 #removing the element whose place has been assigned to the stone
 list.remove(stone)
 
-#print(stone)
-#print(list)
+print(stone)
+print(list)
 
 print("The Angel has put the Philosopher's Stone behind one of the doors,\nNow you must choose one out of them wisely!")
 
@@ -36,5 +36,5 @@ if choice == stone:
 else:
     print("You Lost")
 
-#print(angel)
-#print(list)
+print(angel)
+print(list)
