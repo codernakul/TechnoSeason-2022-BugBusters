@@ -1,5 +1,5 @@
 # TechnoSeason 2022 Project
-![BugBusters-Logo](https://i.imgur.com/kudIQk2.png "BugBusters-Logo")
+<div align="center"><img src="https://i.imgur.com/kudIQk2.png" alt="drawing" width="200"/></div>
 ### Team BugBusters
 
 >Nakul Singh
