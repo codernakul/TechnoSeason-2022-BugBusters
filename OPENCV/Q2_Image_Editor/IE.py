@@ -31,16 +31,16 @@ if choice == "1":
         print("File Not Found")
         path = input("Enter path to image: ")
     crop(path,int(input("Enter distance 1: ")),int(input("Enter distance 2: ")),int(input("Enter distance 3: ")),int(input("Enter distance 4: ")))
-elif choice == "2":
+# elif choice == "2":
 
-elif choice == "3":
-    path = input("Enter path to image: ")
-    if not exists(path):
-        print("File Not Found")
-        path = input("Enter path to image: ")
-    print("done")
+# elif choice == "3":
+    # path = input("Enter path to image: ")
+    # if not exists(path):
+        # print("File Not Found")
+        # path = input("Enter path to image: ")
+    # print("done")
 
-elif choice == "4":
+# elif choice == "4":
 
 else:
     print("Quit")

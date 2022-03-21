@@ -1,40 +1,53 @@
 import random as rnd
 
-#all available choices
-list = [1,2,3]
-
-#the door behind to the stone
-stone = rnd.randint(1, 3)
-
-#removing the element whose place has been assigned to the stone
-list.remove(stone)
-
-print(stone)
-print(list)
-
-print("The Angel has put the Philosopher's Stone behind one of the doors,\nNow you must choose one out of them wisely!")
-
-choice = int(input("Enter choice out of gate no. #1 #2 #3\n"))
-
-if choice != stone:
-    list.remove(choice)
-    angel = list[0]
-    list.remove(angel)
-    list.append(stone)
-else:
-    angel = rnd.choice(list)
-    list.remove(angel)
-
-print("The angel opened the Door #",angel,"\nBut Unfortunately The Philosophers Stone was not there ;-;\n")
-
-ch = input("Would you like to switch your choice (Y/N)")
-if ch == "y" or ch == "Y":
-    choice = list[0]
+def calc(ch1,ch2):
+    #all available choices
+    list = [1,2,3]
     
-if choice == stone:
-    print("Congo! You found the stone")
-else:
-    print("You Lost")
+    #the door behind to the stone
+    stone = rnd.randint(1, 3)
+    
+    #removing the element whose place has been assigned to the stone
+    list.remove(stone)
+    
+    #selected door
+    choice = ch1
+    
+    if choice != stone:
+        list.remove(choice)
+        angel = list[0]
+        list.remove(angel)
+        list.append(stone)
+    else:
+        angel = rnd.choice(list)
+        list.remove(angel)
+    
+    #choice whether to switch or not
+    ch = ch2
+    if ch == "y" or ch == "Y":
+        choice = list[0]
+        
+    if choice == stone:
+        #Congo! You found the stone
+        return 1;
+    else:
+        #You Lost
+        return 0;
+    
+n = 0
+#User, randomly chooses the door and whether to switch or not
+for x in range(100):
+    n = n + calc(rnd.randint(1, 3),rnd.choice(["Y","N"]))
+print("User's Success Rate:",n,"%")
 
-print(angel)
-print(list)
+n = 0
+#Harry, chooses Door#1 and never switches
+for x in range(100):
+    n = n + calc(1,"N")
+print("Harry's Success Rate:",n,"%")
+
+n = 0
+#Ron, chooses Door#1 and always switches
+for x in range(100):
+    n = n + calc(1,"Y")
+print("Ron's Success Rate:",n,"%")
